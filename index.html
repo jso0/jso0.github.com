@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<a href="index.html"><h1>Wiki in box</h1></a>
+			<a href="index.html"><h1>A New Way</h1></a>
 		</div> <!-- #header End -->
 		<div id="main" class="container">
 			<div class="row">
@@ -27,7 +27,7 @@
 			</div>
 		</div><!-- #content End -->
 		<div id="footer">
-			Power by <a href="https://github.com/dmscode/Wiki-in-box">Wiki in box</a>
+			<!--Power by <a href="https://github.com/dmscode/Wiki-in-box">Wiki in box</a>-->
 		</div> <!-- #footer End -->
 		<div style="display:none">
 			<canvas id="line_num_canvas"></canvas>
@@ -119,7 +119,7 @@
 						$("#content").html(function(){
 							return marked(markdownString,{ renderer: renderer });
 						});
-						$('#toc').toc();
+						//$('#toc').toc();
 						// 代码高亮加行号
 						$('pre code').each(function(){
 							var thecode = $(this).html().split('\n');
@@ -135,7 +135,7 @@
 						// 设置页面标题
 						pagetitle=$("#content").find(":header:first").text();
 						if(pagetitle != ""){
-							$("title").text(pagetitle + " - Wiki in box");
+							$("title").text(pagetitle + " - jso0");
 						}
 					}
 				});
